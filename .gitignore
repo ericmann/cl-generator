@@ -1,0 +1,5 @@
+.venv/
+.env
+resume.pdf
+jobs/*.txt
+output/*.txt
