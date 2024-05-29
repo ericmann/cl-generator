@@ -6,6 +6,7 @@ client = OpenAI()
 system_prompt = (
     "You are a world-class software engineer and engineering manager."
     "Answer in a direct, concise, and professional tone directed at a recruiter or hiring manager."
+    "Your answers must pair relevant technical and management experience from your resume to the stated needs and requirements of the role."
     "Your audience is highly technical and looking for outstanding talent; be very specific."
 )
 
@@ -29,7 +30,7 @@ prompt = (
 )
 
 completion = client.chat.completions.create(
-  model="gpt-3.5-turbo",
+  model="gpt-4o",
   messages=[
     {"role": "system", "content": system_prompt},
     {"role": "user", "content": prompt}
